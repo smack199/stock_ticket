@@ -8,7 +8,7 @@ def stock_price():
     price = None
     if request.method == 'POST':
         stock_symbol = request.form.get('symbol')
-        api_key = 'YOUR_ALPHA_VANTAGE_API_KEY'  # Dummy Key for Now
+        api_key = 'YOUR_ALPHA_VANTAGE_API_KEY'  # Dummy Key for Now!
         url = f'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol={stock_symbol}&apikey={api_key}'
         response = requests.get(url)
         data = response.json()
