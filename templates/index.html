@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Price</title>
+</head>
+<body>
+    <h1>Check Stock Price</h1>
+    <form method="POST">
+        <input name="symbol" required placeholder="Enter a stock symbol">
+        <input type="submit" value="Get Price">
+    </form>
+    {% if price %}
+    <h2>The current price is: {{ price }}</h2>
+    {% endif %}
+</body>
+</html>
